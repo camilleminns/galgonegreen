@@ -1,0 +1,224 @@
+/* Box Model Hack */
+* {
+  box-sizing: border-box;
+}
+
+/* Clear fix hack */
+.clearfix:after {
+     content: ".";
+     display: block;
+     clear: both;
+     visibility: hidden;
+     line-height: 0;
+     height: 0;
+}
+
+.clear {
+	clear: both;
+}
+
+body {
+  background-color:white;
+  margin-left: 100px;
+  margin-right:100px;
+  font-family: 'Raleway';
+}
+/******************************************
+/* BASE STYLES
+/*******************************************/
+
+/*Navigation Bar*/
+
+nav {
+  display: flex;
+  flex-direction: row-reverse;
+  justify-content: space-between;
+  padding: 10px 0 0 0;
+}
+#menu {
+  display: flex;
+  justify-content: center;
+  align-items: flex-end;
+}
+#menu .logo a:first-child {
+  display: inline-block;
+  font-family: 'moontimeregular', Arial, sans-serif;
+  font-weight:normal;
+  font-style:normal;
+
+}
+ul {
+  margin: 20px;
+
+}
+
+ul li {
+  font-family: 'Raleway';
+  display: inline-block;
+  padding-right: 15px;
+}
+
+ul#menu li {
+  font-size: 1em;
+  color: gray;
+
+}
+a {
+  text-decoration: none;
+  color:gray;
+}
+
+#galgonegreenheader {
+  margin: 0 auto;
+  width: 640px;
+  display: block;
+}
+
+/*NavBar - Dropdown Nav*/
+.dropdown {
+  position: relative;
+  display: inline-block;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  padding: 15px;
+  background-color: #cccccc;
+}
+
+[data-theme="dark"] .dropdown-content a {
+  color: #424242;
+}
+
+.dropdown-content a {
+  display: inline-block;
+  padding-bottom: 18px;
+}
+
+.dropdown-content a:last-child {
+  padding-bottom: 0px;
+}
+
+.dropdown:hover .dropdown-content {
+  font-family: 'Raleway';
+  display: block;
+}
+.dropdown-content a:hover {
+  color: white;
+}
+/* End of Dropdown Menu */
+
+/*--Light Mode/Dark Mode--*/
+@import url(https://fonts.googleapis.com/css?family=Lato:400,400italic,700|Sansita+One);
+
+:root {
+    --primary-color: #424242;
+    --secondary-color: #536390;
+    --font-color: #424242;
+    --bg-color: #fff;
+    --heading-color: #424242;
+}
+
+[data-theme="dark"] {
+    --primary-color: #cccccc;
+    --secondary-color: #818cab;
+    --font-color: #cccccc;
+    --bg-color:#0f311b;
+    --heading-color: #cccccc;
+}
+
+body {
+  font-family: "Lato", sans-serif;
+  background-color: var(--bg-color);
+  color: var(--font-color);
+  max-width: 100%;
+  margin: 0 auto;
+  font-size: calc(1rem + 0.25vh);
+}
+
+h1 {
+    color: var(--heading-color);
+    font-family: "Sansita One", serif;
+    font-size: 2rem;
+    margin-bottom: 1vh;
+}
+
+a {
+  color: var(--primary-color);
+  text-decoration: none;
+  border-bottom: 3px solid transparent;
+  font-weight: bold;
+  &:hover, &:focus {
+      border-bottom: 3px solid currentColor;
+  }
+}
+.post-meta {
+  font-size: 1rem;
+  font-style: italic;
+  display: block;
+  margin-bottom: 4vh;
+  color: var(--secondary-color);
+}
+
+/*slider switch css */
+.theme-switch-wrapper {
+  display: flex;
+  float: right;
+  align-items: center;
+}
+ em {
+   font-family: 'Raleway';
+   margin-left: 10px;
+   font-size: 0.8rem;
+   color: var(--font-color);
+
+}
+.theme-switch {
+  display: inline-block;
+  height: 25px;
+  position: relative;
+  width: 51px;
+}
+
+.theme-switch input {
+  display:none;
+}
+
+.slider {
+  background-color: #ccc;
+  bottom: 0;
+  cursor: pointer;
+  left: 0;
+  position: absolute;
+  right: 0;
+  top: 0;
+  transition: .4s;
+}
+
+.slider:before {
+  background-color: #fff;
+  bottom: 4px;
+  content: "";
+  height: 18px;
+  left: 4px;
+  position: absolute;
+  transition: .5s;
+  width: 18px;
+}
+
+input:checked + .slider {
+  background-color: #66bb6a;
+}
+
+input:checked + .slider:before {
+  transform: translateX(26px);
+}
+
+.slider.round {
+  border-radius: 30px;
+}
+
+.slider.round:before {
+  border-radius: 50%;
+}
