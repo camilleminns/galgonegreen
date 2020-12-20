@@ -37,20 +37,20 @@ float: left;
     flex-direction: row;
 }
     .home, .community, .esg {
-      width: 33%;
+      width: 33.33%;
       height: 500px;
       display: grid;
     }
     .home {
-      background-image: url("https://i.ibb.co/37gjLTL/powerofgreen.png");
+      background-image: url("https://i.ibb.co/7JgWdC8/powerofgreen-bigthree.png");
       float: left;
     }
     .community {
-      background-image: url("https://i.ibb.co/q7xHvZZ/gitnb.png");
+      background-image: url("https://i.ibb.co/HGxkG8c/gitnb-bigthree.png");
       float: left;
     }
     .esg {
-      background-image: url("https://i.ibb.co/gmsjCmP/bethechange.png");
+      background-image: url("https://i.ibb.co/JdzLW1w/bethechange-bigthree.png");
       float: left;
 }
 [data-theme="dark"] .welcome > h1, .sustainability > h1, p, .intersectional > h1, p {
