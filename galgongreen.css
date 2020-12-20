@@ -1,36 +1,65 @@
 /* --- Sections --- */
 .section {
-  max-width: 100%;
-  /*margin: auto;*/
-  border-bottom: 2px solid;
+  width: 100%;
+  margin: auto;
+  border-bottom: 2px;
 }
 .section_centerText {
-display: flex;
 flex-direction: column;
-/*align-items: center;*/
 padding: 20px;
 
 }
 .section_container, footer {
 width: 100%;
 height: 100%;
-min-height: 20vh;
-background: var(--bg-color);
+display: flex;
 float: left;
-/*border: 1px solid white;*/
 }
-.section_doubleColumn {
-    width: 50%;
-    min-height: 100%;
-
-}
+/*Welcome*/
 .welcome {
-  text-align: left;
+  box-shadow: 0 0 15px gray;
+}
+[data-theme="dark"] .welcome {
   background-color: white;
 }
 
+[data-theme="light"] .welcome {
+
+}
+/*Big Three*/
+.section_tripleColumn {
+    display: flex;
+    max-height: 100%;
+}
+  .bigthree {
+    display: block;
+    align-content: left;
+    flex-direction: row;
+}
+    .home, .community, .esg {
+      width: 33%;
+      height: 500px;
+      display: grid;
+    }
+    .home {
+      background-image: url("https://i.ibb.co/37gjLTL/powerofgreen.png");
+      float: left;
+    }
+    .community {
+      background-image: url("https://i.ibb.co/q7xHvZZ/gitnb.png");
+      float: left;
+    }
+    .esg {
+      background-image: url("https://i.ibb.co/gmsjCmP/bethechange.png");
+      float: left;
+}
 [data-theme="dark"] .welcome > h1, .sustainability > h1, p, .intersectional > h1, p {
   color: #424242;
+}
+/* Sustainability & IE Section */
+.section_doubleColumn {
+    width: 50%;
+    min-height: 100%;
 }
 .sustainability, .intersectional {
   background-color: #dc9750;
@@ -39,11 +68,15 @@ float: left;
   text-align: center;
   align-items: center;
 }
+.intersectional {
+  border-left: 1px
+}
 
 .intersectional img, .sustainability img {
   width: 150px;
   height: 150px;
-  }
+}
+
 p {
   color: var(--font-color);
   font-family:'Raleway', sans-serif;
@@ -55,4 +88,15 @@ p {
 b {
   color: var(--font-color);
   font-weight: 700;
+
 }
+/* About Section */
+
+.about {
+  background-color: white;
+}
+
+/* Footer */
+ .footer {
+   box-shadow:
+ }
