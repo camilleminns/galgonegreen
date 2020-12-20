@@ -2,6 +2,8 @@
   width: 100%;
   margin: 0 auto;
   position: relative;
+  max-width: 997px;
+  align-items: center;
 }
 .glider {
   margin: 0 auto;
@@ -15,7 +17,7 @@
   transform: translateZ(0);
   width: 100%;
   margin: 0;
-  padding: 5px;
+  padding: 0;
   display: flex;
   z-index: 1;
 }
@@ -33,6 +35,7 @@
   cursor: grabbing;
 }
 .glider-slide {
+  min-height: 150px;
   user-select: none;
   justify-content: center;
   align-content: center;

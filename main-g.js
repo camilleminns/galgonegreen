@@ -5,10 +5,11 @@ const galgonegreenheader = document.getElementById("galgonegreenheader");
 
 if (currentTheme) {
     document.documentElement.setAttribute('data-theme', currentTheme);
-    galgonegreenheader.setAttribute('src','https://i.ibb.co/99Fqvjt/darkmodetransparent-galgonegreen.png');
+
 
     if (currentTheme === 'dark') {
         toggleSwitch.checked = true;
+        galgonegreenheader.setAttribute('src','https://i.ibb.co/99Fqvjt/darkmodetransparent-galgonegreen.png');
     }
 }
 
