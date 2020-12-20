@@ -53,8 +53,25 @@ float: left;
       background-image: url("https://i.ibb.co/JdzLW1w/bethechange-bigthree.png");
       float: left;
 }
+.button {
+  background-color: #dba154;
+  border: 1px solid #0f311b;
+  border-radius: 8px;
+  color: var(--button-color);
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 295px 200px;
+  cursor: pointer;
+}
 [data-theme="dark"] .welcome > h1, .sustainability > h1, p, .intersectional > h1, p {
   color: #424242;
+}
+/* R  W L */
+.rwl {
+background-color: var(--rwlbg-color);
 }
 /* Sustainability & IE Section */
 .section_doubleColumn {

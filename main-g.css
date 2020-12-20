@@ -118,6 +118,8 @@ a {
     --font-color: #424242;
     --bg-color: #fff;
     --heading-color: #424242;
+    --button-color:#fff;
+    --rwlbg-color:#afb295;
 }
 
 [data-theme="dark"] {
@@ -126,6 +128,8 @@ a {
     --font-color: #cccccc;
     --bg-color:#0f311b;
     --heading-color: #cccccc;
+    --button-color:#424242;
+    --rwlbg-color:#3d1411;
 }
 
 body {
