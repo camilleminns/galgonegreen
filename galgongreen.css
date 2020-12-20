@@ -17,14 +17,22 @@ float: left;
 }
 /*Welcome*/
 .welcome {
+  background-image: url(https://i.ibb.co/jW9br9c/palmtrees-header.png);
   box-shadow: 0 0 15px gray;
+}
+.welcome h1 {
+  font-family: 'moontime';
+  font-size: 10em;
+  font-weight: lighter;
+  color: white;
+  text-align: center;
+  text-shadow: 2px 2px #ccc;
 }
 [data-theme="dark"] .welcome {
   background-color: white;
 }
-
-[data-theme="light"] .welcome {
-
+[data-theme="dark"] .welcome > h1 {
+  color: white;
 }
 /*Big Three*/
 .section_tripleColumn {
@@ -73,6 +81,9 @@ float: left;
 .rwl {
 background-color: var(--rwlbg-color);
 }
+  .rwl > h2 {
+    font-family: 'moontimeregular';
+  }
 /* Sustainability & IE Section */
 .section_doubleColumn {
     width: 50%;
@@ -108,10 +119,23 @@ b {
 
 }
 /* About Section */
+/* Moontime Font*/
+@font-face {
+    font-family: 'moontime';
+    src: local("MoonTime");
+    src: url('./fonts/moontime-regular-webfont.woff2') format('woff2'),
+         url('./fonts/moontime-regular-webfont.woff') format('woff'),
+         url('MoonTime-Regular.ttf') format("truetype");
 
+
+
+    font-weight: normal;
+    font-style: normal;
+}
 .about {
   background-color: white;
 }
+  }
 
 /* Footer */
  .footer {
