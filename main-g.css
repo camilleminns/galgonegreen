@@ -145,7 +145,8 @@ h1 {
     color: var(--heading-color);
     font-family: "Sansita One", serif;
     font-size: 2rem;
-    margin-bottom: 1vh;
+    margin-bottom: 0.5vh;
+    margin-top: 0.5vh;
 }
 
 a {

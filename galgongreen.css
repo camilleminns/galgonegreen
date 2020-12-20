@@ -17,7 +17,8 @@ float: left;
 }
 /*Welcome*/
 .welcome {
-  background-image: url(https://i.ibb.co/jW9br9c/palmtrees-header.png);
+  background-image: url("https://i.ibb.co/jW9br9c/palmtrees-header.png");
+  background-size: cover;
   box-shadow: 0 0 15px gray;
 }
 .welcome h1 {
@@ -30,9 +31,34 @@ float: left;
 }
 [data-theme="dark"] .welcome {
   background-color: white;
-}
-[data-theme="dark"] .welcome > h1 {
   color: white;
+}
+/*[data-theme="dark"] .welcome  h1 {
+  color: white;
+}
+/* Moontime Font*/
+@font-face {
+    font-family: 'moontime';
+    src: local("MoonTime");
+    src: url('./fonts/moontime-regular-webfont.woff2') format('woff2'),
+         url('./fonts/moontime-regular-webfont.woff') format('woff'),
+         url('MoonTime-Regular.ttf') format("truetype");
+    font-weight: normal;
+    font-style: normal;
+}
+/* About Section */
+.about h1 {
+   font-family: 'moontime';
+   font-size: 9em;
+   font-weight: lighter;
+   text-align:center;
+   color: white;
+
+}
+.about {
+  background-image: url("https://i.ibb.co/Xjy0YMR/fern.jpg");
+  background-size: cover;
+  background-color: white;
 }
 /*Big Three*/
 .section_tripleColumn {
@@ -51,6 +77,8 @@ float: left;
     }
     .home {
       background-image: url("https://i.ibb.co/7JgWdC8/powerofgreen-bigthree.png");
+      background-size: cover;
+      width: 33.33%;
       float: left;
     }
     .community {
@@ -65,24 +93,30 @@ float: left;
   background-color: #dba154;
   border: 1px solid #0f311b;
   border-radius: 8px;
+  box-shadow:
   color: var(--button-color);
   padding: 15px 32px;
   text-align: center;
   text-decoration: none;
   display: inline-block;
+  font-family: 'Raleway';
   font-size: 16px;
   margin: 295px 200px;
   cursor: pointer;
+  box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
 }
-[data-theme="dark"] .welcome > h1, .sustainability > h1, p, .intersectional > h1, p {
-  color: #424242;
+[data-theme="dark"] .sustainability > h1 > p, .intersectional > h1 > p {
+   color: #424242;
 }
 /* R  W L */
 .rwl {
 background-color: var(--rwlbg-color);
 }
-  .rwl > h2 {
-    font-family: 'moontimeregular';
+  .rwl > h1 {
+    font-family: 'moontime';
+    font-size: 5em;
+    font-weight: lighter;
+    text-align: center;
   }
 /* Sustainability & IE Section */
 .section_doubleColumn {
@@ -116,27 +150,7 @@ p {
 b {
   color: var(--font-color);
   font-weight: 700;
-
 }
-/* About Section */
-/* Moontime Font*/
-@font-face {
-    font-family: 'moontime';
-    src: local("MoonTime");
-    src: url('./fonts/moontime-regular-webfont.woff2') format('woff2'),
-         url('./fonts/moontime-regular-webfont.woff') format('woff'),
-         url('MoonTime-Regular.ttf') format("truetype");
-
-
-
-    font-weight: normal;
-    font-style: normal;
-}
-.about {
-  background-color: white;
-}
-  }
-
 /* Footer */
  .footer {
    box-shadow:
