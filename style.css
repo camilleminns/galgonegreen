@@ -1,0 +1,47 @@
+@import url('https://fonts.googleapis.com/css2?family=Work+Sans');
+@font-face {
+  font-family: 'Avenir';
+  src: url('../fonts/Avenir.eot?#iefix') format('embedded-opentype'),  url('../fonts/Avenir.woff') format('woff'), url('../fonts/Avenir.ttf')  format('truetype'), url('../fonts/Avenir.svg#Avenir') format('svg');
+}
+
+body {
+    font-family: 'Avenir', sans-serif;
+    text-align: center;
+    font-weight: lighter;
+
+}
+
+h1 {
+    color: #333;
+    font-weight: bolder;
+}
+
+ul#checklist {
+    list-style: none;
+    padding: 0;
+}
+
+ul#checklist li {
+    margin: 10px 0;
+}
+
+.checkbox {
+    margin-right: 10px;
+}
+
+.progress-container {
+    margin-top: 20px;
+    width: 100%;
+    height: 20px;
+    background-color: #eee;
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+.progress-bar {
+    width: 0;
+    height: 100%;
+    background-color: #95A800;
+    border-radius: 10px;
+    transition: width 0.3s ease-in-out;
+}
